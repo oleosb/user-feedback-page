@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::before,
+*::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style-type: none;
+        text-decoration: none;
+}
+
+:root{
+        --thumb-width: 1.5em;
+        --range-color: #fed018;
+}
+
+html{
+        font-family: 'Roboto', sans-serif;
+}
+
+body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        padding: 1em;
+        overflow: hidden;
+        background-color: #EEEDE7;
+        margin: auto 0 0 0;
+}
+
+.container{
+        width: 38em;
+        height: fit-content;
+}
+
+.container,
+.container2{
+        display: none;
+        background-color: #fff;
+        border-radius: 1em;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 2em;
+        text-align: center;
+        color: #000;
+}
+
+.emojis{
+        margin: 5em auto 4em auto;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+}
+
+.emojis img{
+        width: 5em;
+}
+
+.emojis img:nth-of-type(1){
+        filter: invert(40%) sepia(98%) saturate(1790%) hue-rotate(328deg) brightness(108%) contrast(100%);
+}
+.emojis img:nth-of-type(2){
+        filter: invert(74%) sepia(22%) saturate(7466%) hue-rotate(328deg) brightness(101%) contrast(102%);
+}
+.emojis img:nth-of-type(3){
+        filter: invert(77%) sepia(92%) saturate(1676%) hue-rotate(343deg) brightness(105%) contrast(99%);
+}
+.emojis img:nth-of-type(4){
+        filter: invert(99%) sepia(11%) saturate(4983%) hue-rotate(26deg) brightness(92%) contrast(81%);
+}
+.emojis img:nth-of-type(5){
+        filter: invert(67%) sepia(34%) saturate(678%) hue-rotate(71deg) brightness(99%) contrast(84%);
+}
+
+.inpt-container{
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+}
+
+input[type='range']{
+        width:20em;
+        -webkit-appearance: none;
+}
+
+input[type='range']:focus{
+        outline: none;
+}
+
+label{
+        position: absolute;
+        font-size: .9em;
+        background-color: #fff;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: .5em 1em;
+        top: -2em;
+        left: 6.8em;
+        transform: translateY(-50%);
+}
+
+/**CHROME & SAFARI */
+input[type='range']::-webkit-slider-runnable-track{
+        background-color: var(--range-color);
+        border-radius: 1em;
+        cursor: pointer;
+        width: 100%;
+        height: .8em;
+}
+
+input[type='range']::-webkit-slider-thumb{
+        -webkit-appearance: none;
+        width: var(--thumb-width);
+        height: 1.5em;
+        transform: translateY(-25%);
+        background-color: #fff;
+        border: 1px solid var(--range-color);
+        border-radius: 50%;
+}
+
+/**FIREFOX */
+input[type='range']::-moz-range-track{
+        background-color: var(--range-color);
+        border-radius: 1em;
+        cursor: pointer;
+        width: 100%;
+        height: .9em;
+}
+
+input[type='range']::-moz-range-thumb{
+        -webkit-appearance: none;
+        width: var(--thumb-width);
+        height: 1.5em;
+        transform: translateY(-25%);
+        background-color: #fff;
+        border: 1px solid var(--range-color);
+        border-radius: 50%;
+}
+
+/**IE */
+input[type='range']::-ms-track{
+        background-color: var(--range-color);
+        border-radius: 1em;
+        cursor: pointer;
+        width: 100%;
+        height: .9em;
+}
+
+input[type='range']::-ms-thumb{
+        -webkit-appearance: none;
+        width: var(--thumb-width);
+        height: 1.5em;
+        transform: translateY(-25%);
+        background-color: #fff;
+        border: 1px solid var(--range-color);
+        border-radius: 50%;
+}
+
+.send-btn{
+        margin: 4em 0 0 0;
+        padding: .8em 2em;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: backgorund-color .2s ease, transform .2s ease;
+}
+
+.send-btn:hover{
+        background-color: rgba(0, 0, 0, 0.85);
+}
+
+.send-btn:active{
+        transform: scale(.98);
+}
+
+.show{
+        display: block;
+}
+
+.container2{
+        width: 30em;
+}
+
+.heart{
+        width: 5em;
+        filter: invert(72%) sepia(83%) saturate(6644%) hue-rotate(330deg) brightness(110%) contrast(96%);
+}
+
+.container2 h2{
+        margin: 1em 0;
+}
+
+.feedback{
+        font-weight: 400;
+        font-size: 1.3em;
+}
+
+.feedback > span{
+        color: var(--range-color);
+}
+
+.container2 h3{
+        margin: 2em 0 1em 0;
+        font-weight: 400;
+}
+

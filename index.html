@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>user feedback</title>
+</head>
+<body>
+        <div class="container show">
+                <h2>Qual o seu nível de satisfação com o nosso suporte?</h2>
+
+                <div class="emojis">
+                        <img src="assets/imgs/angry.svg" alt="">
+                        <img src="assets/imgs/unsatisfied.svg" alt="">
+                        <img src="assets/imgs/natural.svg" alt="">
+                        <img src="assets/imgs/satisfied.svg" alt="">
+                        <img src="assets/imgs/very satisfied.svg" alt="">
+                </div>
+
+                <div class="inpt-container">
+                        <label for="range">Neutro</label>
+                        <input type="range" name="range" id="range" min="0" max="100">
+                </div>
+
+                <button class="send-btn">ENVIAR</button>
+        </div>
+
+        <div class="container2">
+                <img src="assets/imgs/heart.svg" alt="" class="heart">
+                <h2 class="thx">Obrigado!</h2>
+                <h2 class="feedback">Feedback: <span>Neutro</span></h2>
+                <h3>Usaremos o seu feedback para melhorar nosso suporte.</h3>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+</body>
+</html>
